@@ -3,9 +3,7 @@ var router = express.Router();
 var PythonShell = require('python-shell').PythonShell;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+
 
 router.get('/possible-locations', function(req, res) {
     var options = {

@@ -21,6 +21,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/',(req,res)=>{
+  res.send('Hi');
+})
+
+app.get('/favicon.ico',(req,res)=>{
+  res.send('Hi again');
+})
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
