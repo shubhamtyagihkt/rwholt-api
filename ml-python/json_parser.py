@@ -1,7 +1,7 @@
 import sys
 import json
 
-file = 'C:/Users/Shubham Tyagi/Desktop/delhi_highway.json'
+file = 'delhi_highway.json'
 with open(file, "r") as read_file:
     data = json.load(read_file)
 coord = []

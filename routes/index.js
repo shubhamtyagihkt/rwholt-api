@@ -17,7 +17,7 @@ router.get('/possible-locations', function(req, res) {
                 req.query.sims // number of simulations
             ]
     };
-    PythonShell.run('ml-python/json_parser.py', options, function (err, data) {
+    PythonShell.run('ml-python/possible_locations.py', options, function (err, data) {
         if (err) res.send(err);
         res.send(data.toString());
     });
