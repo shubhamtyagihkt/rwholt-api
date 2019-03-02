@@ -26,7 +26,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/favicon.ico',(req,res)=>{
-  res.send('Hi again');
+  res.send('Hi');
 })
 
 app.use('/', indexRouter);
