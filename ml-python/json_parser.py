@@ -17,8 +17,8 @@ for line in coord:
 new_np = np.unique(np.array(new),axis=0)
 new = []
 for line in new_np:
-    new.append({'lng': points[0],
-                'lat': points[1]
+    new.append({'lng': line[0],
+                'lat': line[1]
     }) 
 print(json.dumps(new))
 sys.stdout.flush()
