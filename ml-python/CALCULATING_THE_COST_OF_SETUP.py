@@ -19,8 +19,8 @@ import urllib
 # In[64]:
 
 
-tanks = pd.read_csv("C:/Users/Shubham Tyagi/Desktop/tanks_loc.csv")
-houses = pd.read_csv("C:/Users/Shubham Tyagi/Desktop/data.csv")
+tanks = pd.read_csv("ml-python/tanks_loc.csv")
+houses = pd.read_csv("ml-python/data.csv")
 
 
 # In[65]:
