@@ -52,4 +52,20 @@ router.get('/cost-estimation', function(req, res) {
         res.send(data);
     });
 });
+
+router.get('/costv2', function(req, res) {
+    var options = {
+        args:
+            [
+                req.query.funds, // starting funds
+                req.query.size, // (initial) wager size
+                req.query.count, // wager count — number of wagers per sim
+                req.query.sims // number of simulation
+            ]
+    };
+    PythonShell.run('ml-python/website_pipes_plot/PIPE_PATH.py', options, function (err, data) {
+        if (err) res.send(err);
+        res.send(data);
+    });
+});
 module.exports = router;
